@@ -1,7 +1,7 @@
 B.\"Manpage for simple shell 
-.\"Created by David Afolabi and Joy Afolagbade
+.\"Created by Chere Urgaya and Samuel Gurmessa
 
-.TH SODASH 1 "May 5 2022" "SODA SHELL - Simple Shell man page"
+.TH SODASH 1 "Jun 1 - 16, 2022" "SODA SHELL - Simple Shell man page"
 
 .SH NAME
 sodash\fR \- simple UNIX command interpreter
@@ -10,13 +10,15 @@ sodash\fR \- simple UNIX command interpreter
 soda\fR [\fIfilename\fR]
 
 .SH COPYRIGHT
-soda is Copyright (C) 2022 by Ogwalu chidozie and Mubaraq Abuhasan
+soda is Copyright (C) 2022 by Chere Urgaya and Samuel Gurmessa
 
 .SH DESCRIPTION
 Soda\fR is a sh-compatible command language interpreter that executes commands read from the standard input or from a file.
 
 .SH ARGUMENTS
-If arguments remain after option processing, the first argument is assumed to be the name of a file containing shell commands. Sodash reads and executes commands from this file, then exits. Sodash exit status is the exit status of the last command executed in the script. If no commands are executed, the exit status is 0. An attempt is first made to open the file in the current directory, and, if no file is found, then the shell searches the directories in PATH for the script.
+If arguments remain after option processing, the first argument is assumed to be the name of a file containing shell commands. 
+Sodash reads and executes commands from this file, then exits. Sodash exit status is the exit status of the last command executed in the script. 
+If no commands are executed, the exit status is 0. An attempt is first made to open the file in the current directory, and, if no file is found, then the shell searches the directories in PATH for the script.
 
 .SH INVOCATION
 Sodash is started with the standard input connected to the terminal (as determined by \fIisatty(3)\fR), the interactive mode is executed. Also non-interactively option can be executed.
@@ -95,4 +97,4 @@ access(2), chdir(2), execve(2), _exit(2), exit(3), fflush(3), fork(2), free(3), 
 Sodash\fR takes basic functionality of the \fBsh\fR shell. This man page is based on the man page bash(1)
 
 .SH AUTHORS
-David Afolabi and Joy Afolagbade
+Chere Urgaya and Samuel Gurmessa
